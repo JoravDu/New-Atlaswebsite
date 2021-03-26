@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/typefaces.css">
+    <!-- Add CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+    <script src="data/windmolens.geojson" defer></script>
+
+    <title>Mapbox is kut</title>
+</head>
+
+<body>
+    <div id="navbar">
+        <a href="index.html"><img class="logo" src="https://www.apple.com/ac/globalnav/6/en_US/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_apple_image__cxwwnrj0urau_large.svg" alt=""></a>
+        <a href="zonnederland.html">ZonNL</a>
+        <a class="active" href="#">WindNL</a>
+        <a href="#">Hoi</a>
+    </div>
+    <div class="invc-blck-60"></div>
+    <div class="p3-box">
+        <h1 class="xl-header-c">Wind in Nederland</h1>
+        <div class="p3-map">
+            <div id="leaflet-kaart"></div>
+        </div>
+        <div class="p3-text" style="text-align: justify;">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga modi corporis quas iusto beatae
+                itaque minima quam cumque. Dolor distinctio esse autem nulla repellendus unde fugit obcaecati aliquid,
+                necessitatibus, id ducimus provident suscipit nesciunt veritatis aperiam impedit sequi quod in fugiat
+                quibusdam. Voluptatibus fuga voluptate tenetur doloribus id, ut vero corporis harum aliquid hic nihil
+                ratione debitis voluptates. Et possimus at cum, nam tempore odio rerum culpa unde iste non doloribus
+                quam fugit, a magnam sunt maiores eligendi voluptates? Quia iure aut corrupti? Aspernatur enim quaerat,
+                neque illo autem delectus distinctio aliquid tempora, ipsam laudantium culpa. Distinctio accusamus sint
+                excepturi ipsam repellat perspiciatis nisi magnam odio odit optio qui et possimus recusandae veniam,
+                delectus iusto voluptatibus voluptatem soluta dolorem labore ab incidunt quas. Perferendis hic
+                necessitatibus distinctio aspernatur in illum doloribus ipsum rem suscipit maiores voluptatibus ducimus
+                delectus explicabo odio, est, ipsa maxime at dolorum nihil iste temporibus a!
+            </p>
+        </div>
+        <div class="p3-map">
+            <div id='mapbox'></div>
+        </div>
+    </div>
+
+    <script src="js/mapbox/mapbox.js" defer></script>
+    <script src="js/leaflet/leaflet.js" defer></script>
+
+</body>
+
+</html>
